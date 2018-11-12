@@ -1,4 +1,4 @@
-package com.blindproj;
+package com.com.blindproj;
 
 import com.facebook.react.ReactActivity;
 
