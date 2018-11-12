@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native'
+import { Container, Header, Content, Form, Item, Input, Button, Text } from 'native-base';
 import firebase from 'react-native-firebase'
 
 export default class Login extends React.Component {
@@ -19,6 +19,38 @@ export default class Login extends React.Component {
    
     render() {
         return (
+            <Container>
+                <Header />
+                <Content>
+                    <Form>
+                        <Item>
+                            <Input placeholder="email" 
+                            onChangeText={email => this.setState({ email })}
+                            value={this.state.email}/>
+                        </Item>
+                        <Item last>
+                            <Input placeholder="Password" 
+                            secureTextEntry
+                            onChangeText={password => this.setState({ password })}
+                            value={this.state.password}/>
+                        </Item>
+                        <Button onPress={this.handleLogin}>
+                            <Text>Login</Text>
+                        </Button>
+                        <Button onPress={() => this.props.navigation.navigate('SignUp')}>
+                            <Text>Sign up</Text>
+                        </Button>
+                        <Button onPress={() => this.props.navigation.navigate('Home')}>
+                            <Text>Home</Text>
+                        </Button>
+                    </Form>
+                </Content>
+            </Container>
+
+        )
+    }
+}
+/*import { StyleSheet, Text, TextInput, View, Button } from 'react-native'
             <View style={styles.container}>
                 <Text>Login</Text>
                 {this.state.errorMessage &&
@@ -47,9 +79,8 @@ export default class Login extends React.Component {
                 />
                 <Button title="Home" onPress={() =>this.props.navigation.navigate('Home')} />
             </View>
-        )
-    }
-}
+
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -64,3 +95,4 @@ const styles = StyleSheet.create({
         marginTop: 8
     }
 })
+*/
