@@ -7,6 +7,9 @@ import Camera from './views/Camera'
 import SOS from './views/SOS'
 import Caller from './views/Caller'
 import Navigation from './views/Navigation'
+import Guardian from './views/Guardian'
+import Login from './views/Login'
+import SignUp from './views/SignUp'
 // create our app's navigation stack
 const App = SwitchNavigator(
   {
@@ -14,7 +17,10 @@ const App = SwitchNavigator(
     Camera,
     SOS,
     Caller,
-    Navigation
+    Navigation,
+    Guardian,
+    Login,
+    SignUp
 
   },
   {
