@@ -1,21 +1,15 @@
 import React from 'react'
 import { StyleSheet, Platform, Image, Text, View ,TouchableOpacity} from 'react-native'
-import firebase from 'react-native-firebase'
 export default class Main extends React.Component {
-    clickGuardian = () => {
-        firebase.auth().onAuthStateChanged(user => {
-            this.props.navigation.navigate(user ? 'Guardian' : 'Login')
-        })
-    }
     render() {
         return (
             <View style={styles.container}>
                 <View style={styles.row}>
-                <TouchableOpacity title="Guardian" onPress={this.clickGuardian} style={styles.button}>
-                    <Text>Guardian</Text>  
+                <TouchableOpacity title="Outdoor navigation" style={styles.button}>
+                    <Text>Outdoor navigation</Text>  
                 </TouchableOpacity>       
-                <TouchableOpacity title="Blind" onPress={() =>this.props.navigation.navigate('Blind')} style={styles.button}>
-                    <Text>Blind</Text>  
+                <TouchableOpacity title="Indoor navigation" onPress={() =>this.props.navigation.navigate('Indoor')} style={styles.button}>
+                    <Text>Indoor navigation</Text>  
                 </TouchableOpacity>
                 </View>
             </View>
