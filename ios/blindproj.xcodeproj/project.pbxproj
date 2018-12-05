@@ -53,6 +53,8 @@
 		AC85B0681AB6472AA85395B4 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 690D3E78D8E6406DBF3D9AFF /* SimpleLineIcons.ttf */; };
 		CCD9D24EA02B41EE88A3E69F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AF7C354A93B46D4A383949D /* Zocial.ttf */; };
 		03EE0FA38EFD4767AD201140 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D51C814967344DF832D7E73 /* libAirMaps.a */; };
+		88921698840040F8B70793C9 /* libRNiBeacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7AB782FC0C43349731E9FF /* libRNiBeacon.a */; };
+		49A87772EBCA4B509DFC6391 /* libRNBluetoothState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31336C81E0C24B4287600B5B /* libRNBluetoothState.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -376,6 +378,10 @@
 		5AF7C354A93B46D4A383949D /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C3BF8843C0AE455EB9E57136 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; name = "AirMaps.xcodeproj"; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		5D51C814967344DF832D7E73 /* libAirMaps.a */ = {isa = PBXFileReference; name = "libAirMaps.a"; path = "libAirMaps.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		05830AB0A3FB4EE4A998F299 /* RNiBeacon.xcodeproj */ = {isa = PBXFileReference; name = "RNiBeacon.xcodeproj"; path = "../node_modules/react-native-beacons-manager/ios/RNiBeacon/RNiBeacon.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		3A7AB782FC0C43349731E9FF /* libRNiBeacon.a */ = {isa = PBXFileReference; name = "libRNiBeacon.a"; path = "libRNiBeacon.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		DD72CA33A69A4BFE9A9CA654 /* RNBluetoothState.xcodeproj */ = {isa = PBXFileReference; name = "RNBluetoothState.xcodeproj"; path = "../node_modules/react-native-bluetooth-state/RNBluetoothState.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		31336C81E0C24B4287600B5B /* libRNBluetoothState.a */ = {isa = PBXFileReference; name = "libRNBluetoothState.a"; path = "libRNBluetoothState.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,6 +411,8 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				DEE7318A619F4AF5989BAD26 /* libRNFirebase.a in Frameworks */,
 				03EE0FA38EFD4767AD201140 /* libAirMaps.a in Frameworks */,
+				88921698840040F8B70793C9 /* libRNiBeacon.a in Frameworks */,
+				49A87772EBCA4B509DFC6391 /* libRNBluetoothState.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +601,8 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				68BE448AAFCD4EDC99CA0E82 /* RNFirebase.xcodeproj */,
 				C3BF8843C0AE455EB9E57136 /* AirMaps.xcodeproj */,
+				05830AB0A3FB4EE4A998F299 /* RNiBeacon.xcodeproj */,
+				DD72CA33A69A4BFE9A9CA654 /* RNBluetoothState.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1259,11 +1269,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 					"$(SRCROOT)\..\node_modules\react-native-maps\lib\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-beacons-manager\ios\RNiBeacon\RNiBeacon",
+					"$(SRCROOT)\..\node_modules\react-native-bluetooth-state/**",
 				);
 			};
 			name = Debug;
@@ -1287,11 +1301,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 					"$(SRCROOT)\..\node_modules\react-native-maps\lib\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-beacons-manager\ios\RNiBeacon\RNiBeacon",
+					"$(SRCROOT)\..\node_modules\react-native-bluetooth-state/**",
 				);
 			};
 			name = Release;
@@ -1316,6 +1334,8 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 					"$(SRCROOT)\..\node_modules\react-native-maps\lib\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-beacons-manager\ios\RNiBeacon\RNiBeacon",
+					"$(SRCROOT)\..\node_modules\react-native-bluetooth-state/**",
 				);
 			};
 			name = Debug;
@@ -1339,6 +1359,8 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 					"$(SRCROOT)\..\node_modules\react-native-maps\lib\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-beacons-manager\ios\RNiBeacon\RNiBeacon",
+					"$(SRCROOT)\..\node_modules\react-native-bluetooth-state/**",
 				);
 			};
 			name = Release;
@@ -1370,11 +1392,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 					"$(SRCROOT)\..\node_modules\react-native-maps\lib\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-beacons-manager\ios\RNiBeacon\RNiBeacon",
+					"$(SRCROOT)\..\node_modules\react-native-bluetooth-state/**",
 				);
 			};
 			name = Debug;
@@ -1406,11 +1432,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 					"$(SRCROOT)\..\node_modules\react-native-maps\lib\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-beacons-manager\ios\RNiBeacon\RNiBeacon",
+					"$(SRCROOT)\..\node_modules\react-native-bluetooth-state/**",
 				);
 			};
 			name = Release;
@@ -1441,11 +1471,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 					"$(SRCROOT)\..\node_modules\react-native-maps\lib\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-beacons-manager\ios\RNiBeacon\RNiBeacon",
+					"$(SRCROOT)\..\node_modules\react-native-bluetooth-state/**",
 				);
 			};
 			name = Debug;
@@ -1476,11 +1510,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-firebase\ios\RNFirebase/**",
 					"$(SRCROOT)\..\node_modules\react-native-maps\lib\ios/**",
+					"$(SRCROOT)\..\node_modules\react-native-beacons-manager\ios\RNiBeacon\RNiBeacon",
+					"$(SRCROOT)\..\node_modules\react-native-bluetooth-state/**",
 				);
 			};
 			name = Release;

@@ -11,6 +11,7 @@ import Guardian from './views/Guardian'
 import Login from './views/Login'
 import SignUp from './views/SignUp'
 import Blind from './views/Blind'
+import Indoor from './views/Indoor'
 // create our app's navigation stack
 const App = SwitchNavigator(
   {
@@ -22,7 +23,8 @@ const App = SwitchNavigator(
     Guardian,
     Login,
     SignUp,
-    Blind
+    Blind,
+    Indoor
 
   },
   {

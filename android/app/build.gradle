@@ -148,6 +148,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-beacons-manager')
     implementation(project(':react-native-maps')){
        exclude group: 'com.google.android.gms'
     }

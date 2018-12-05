@@ -9,6 +9,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.mackentoch.beaconsandroid.BeaconsAndroidPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,7 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
             new RNFirebasePackage(),
             new RNFirebaseAuthPackage(),
-            new MapsPackage()
+            new MapsPackage(),
+            new BeaconsAndroidPackage()
       );
     }
 

@@ -7,9 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
+    "mathjs": "^5.3.1",
     "native-base": "^2.8.1",
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.57.4",
+    "react-native-beacons-manager": "^1.0.7",
+    "react-native-bluetooth-state": "^2.0.0",
     "react-native-firebase": "^5.1.0",
     "react-native-maps": "^0.22.1",
     "react-navigation": "^2.18.2"
