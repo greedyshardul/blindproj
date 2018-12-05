@@ -40,7 +40,7 @@ export default class Login extends React.Component {
                         <Button onPress={() => this.props.navigation.navigate('SignUp')}>
                             <Text>Sign up</Text>
                         </Button>
-                        <Button onPress={() => this.props.navigation.navigate('Home')}>
+                        <Button onPress={() => this.props.navigation.navigate('Navigation')}>
                             <Text>Home</Text>
                         </Button>
                     </Form>

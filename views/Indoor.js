@@ -29,9 +29,9 @@ class Root extends Component {
     this.state = {
       // region information
       whitelist: {
-        '8ce79713-008d-47fc-b40c-7ccbb3bb19e9': { lat: 1.312310, lng: 103.858599 },
-        '6d683042-4970-3258-5832-70494230686d': { lat: 1.312391, lng: 103.858601 },
-        '4a4b441c-ebad-4efc-b35f-548b5439c5b1': { lat: 1.312375, lng: 103.858429 }
+        '8ce79713-008d-47fc-b40c-7ccbb3bb19e9': { lat: 19.072932, lng: 72.899811 },
+        '6d683042-4970-3258-5832-70494230686d': { lat: 19.072782, lng: 72.899814 },
+        '4a4b441c-ebad-4efc-b35f-548b5439c5b1': { lat: 19.072856, lng: 72.899591 }
       },
       // React Native ListView datasource initialization
       dataSource: ds.cloneWithRows([]),
@@ -166,8 +166,8 @@ class Root extends Component {
           style={styles.map}
           customMapStyle={mapStyle}
           initialRegion={{
-            latitude: 1.365984,
-            longitude: 103.790502,
+            latitude: 19.072887,
+            longitude: 72.899684,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
           }}
@@ -230,7 +230,7 @@ class Root extends Component {
           Proximity: {rowData.proximity ? rowData.proximity : 'NA'}
         </Text>
         <Text style={styles.smallText}>
-          Distance: {rowData.accuracy ? rowData.accuracy.toFixed(2) : 'NA'}m
+          Distance: {rowData.distance ? rowData.distance.toFixed(2) : 'NA'}m
         </Text>
       </View>
     );
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
   headline: {
     fontSize: 20,
     paddingTop: 20,
-    color: '#fff'
+    color: '#000'
   },
   row: {
     padding: 8,
@@ -249,7 +249,7 @@ const styles = StyleSheet.create({
   },
   smallText: {
     fontSize: 11,
-    color: '#fff'
+    color: '#000'
   },
   map: {
     ...StyleSheet.absoluteFillObject,

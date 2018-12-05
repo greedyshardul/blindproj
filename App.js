@@ -28,7 +28,7 @@ const App = SwitchNavigator(
 
   },
   {
-    initialRouteName: 'Home'
+    initialRouteName: 'Navigation'
   }
 )
 export default App

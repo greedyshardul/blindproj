@@ -20,7 +20,7 @@ export default class Guardian extends React.Component {
                 </Text>
                 <Button title="Logout" onPress={this.handleLogout} />
                 <Button title="open map" onPress={() =>this.props.navigation.navigate('MapView')} />
-                <Button title="Home" onPress={() =>this.props.navigation.navigate('Home')} />
+                <Button title="Home" onPress={() =>this.props.navigation.navigate('Navigation')} />
 
             </View>
         )
